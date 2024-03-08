@@ -1,0 +1,67 @@
+@use "../global";
+
+#single {
+  padding-top: 120px;
+  .single {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    &__left {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    &__right {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        background-color: #3d6b6d;
+        h1,
+        h3 {
+          font-family: "Roboto", "sans-serif";
+          font-weight: 400;
+          margin-bottom: 10px;
+          color: white;
+        }
+        h1 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+        .full__inform__box {
+          padding: 10px;
+          border-radius: 12px;
+          background-color: white;
+          p {
+            font-family: "Roboto", "sans-serif";
+            font-weight: 400;
+            margin-bottom: 0;
+            margin-bottom: 10px;
+          }
+        }
+        .about__company {
+          margin-bottom: 10px;
+        }
+        .own__information {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px;
+          h3 {
+            padding: 5px;
+            background-color: #3d6b6d;
+            margin-bottom: 0;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
